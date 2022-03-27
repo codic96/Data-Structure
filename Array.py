@@ -24,3 +24,9 @@ int_array.insert(2,3)
 print(int_array)
 
   
+''' Python array supports negative index ''' 
+import array
+int_array = array.array('i'[1,2,3,4])
+int_array.insert(-1)
+int_array.insert(-2)
+print(int_array)
