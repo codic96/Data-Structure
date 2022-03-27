@@ -14,3 +14,13 @@ int_arrary = array.array('i',[1,2,3,4,5,6])
 for a in int_array:
   print(a)
   
+
+  '''Insert elements ''' 
+import array
+int_array = array.array('i'[1,2,3,4,5,6])
+int_array.insert(0,1)
+int_array.insert(1,2)
+int_array.insert(2,3)
+print(int_array)
+
+  
