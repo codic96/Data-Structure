@@ -117,7 +117,29 @@ class LinkedList:
         temp = temp.next
         
           
-        
+     if __name__ == '__main__':
+      llist = Linkedlist()
+      llist.insertAtEnd(1)
+      llist.insertAtBeginning(2)
+      llist.insertAtBeginning(3)
+      llist.insertAtEnd(4)
+      llist.insertAtAfter(llist.head.next,5)
+      
+      print('linked list')
+      list.printlist()
+      print('\n After deleting an Element')
+      llist.deleteNode(3)
+      llist.printList()
+      print()
+      item_to_find =3
+      if llist.search(item_to_find):
+        print(str(item_to_find)+"is found")
+      else:
+        print(str(item_to_find)+"is not found")
+      llist.sortLinkedList(llist.head)
+      print("sorted list")
+      llist.printList()
+      
         
     
   
