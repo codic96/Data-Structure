@@ -108,6 +108,14 @@ class LinkedList:
             current.data,index.data=index.data,current.data
             index = index.next
           current = current.next
+      
+      #Print the linked list
+      def printList(self):
+        temp = self.head
+        while(temp):
+          print(str(temp.data)+"",end="")
+        temp = temp.next
+        
           
         
         
