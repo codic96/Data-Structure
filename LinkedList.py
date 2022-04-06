@@ -61,6 +61,31 @@ class LinkedList:
       while(last.next):
         last = last.next
       last.next = new_node   
+      
+    #Deleting a node
+    def deleteNode(self,position):
+      if self.head is None:
+        return 
+      temp = self.head
+      if position == 0:
+        self.head = temp.next
+        temp = None
+        return 
+      
+      #Find the key to be deleted
+      for i in range(position -1):
+        temp = temp.next
+        if temp is None
+        break
+     #If the key is not present 
+    if temp is None:
+      return 
+    if temp.next is None:
+      return 
+    next = temp.next.next 
+    temp.next = next 
+    
+    #Search an element
         
         
         
