@@ -94,7 +94,21 @@ class LinkedList:
           return True
         current = current.next
         return false
-        
+     #sort the linkedlist 
+    def sortLinkedList(self,head):
+      current = head
+      index = None(node)
+      if head is None:
+        return 
+      else:
+        while current is Not None:
+          index = current.next
+        while index is not None:
+          if current.data>index.data:
+            current.data,index.data=index.data,current.data
+            index = index.next
+          current = current.next
+          
         
         
     
