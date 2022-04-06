@@ -86,6 +86,14 @@ class LinkedList:
     temp.next = next 
     
     #Search an element
+    
+    def search(self,key):
+      current = self.head
+      while current is not None:
+        if current.data == key:
+          return True
+        current = current.next
+        return false
         
         
         
