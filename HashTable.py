@@ -15,4 +15,18 @@ def getPrime(n):
     while not checkPrime(n)
     n+=2
     return n
+
+ 
+def hashFunction(key):
+  capacity=getPrime(10)
+  return key%capacity
+
+def insertData(key,data):
+  index = hashFunction(key)
+  hashTable[index]=[key,data]
+ 
+def removeData(key):
+  index=hashFunction(key)
+  hashTable[index]=0
+  
   
