@@ -29,4 +29,13 @@ def removeData(key):
   index=hashFunction(key)
   hashTable[index]=0
   
+ insertData(123,"apple")
+insertData(421,"mango")
+insertData(521,"banana")
+insertData(654,"guava")
+
+print(hashTable)
+removeData(123)
+print(hashTable)
+
   
