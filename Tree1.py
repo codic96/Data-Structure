@@ -21,6 +21,16 @@ def postorder(root):
     postorder(root.right)
     #Travserse root
     print(str(root.val)+"->",end='')
+def preorder(root):
+  if root:
+    #Traverse root
+    print(str(root.val)+'->',end='')
+    #Traverse left
+    preorder(root.left)
+    #Traverse right
+    preorder(root.right)
+    
+    
     
     
     
