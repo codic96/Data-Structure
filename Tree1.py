@@ -13,6 +13,15 @@ def inorder(root):
     print(str(root.val)+ "->",end='')
     #Traverse right
     inorder(root.right)
+def postorder(root):
+  if root:
+    #Traverse left
+    postorder(root.left)
+    #Traverse right
+    postorder(root.right)
+    #Travserse root
+    print(str(root.val)+"->",end='')
+    
     
     
     
