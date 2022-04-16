@@ -30,6 +30,14 @@ def traversePostOrder(self):
     self.right.traversePostOrder()
   print(self.val,end='')
   
+root = Node(1)
+root.left = Node(2)
+root.right = Node(3)
+root.left.left = Node(4)
+print('Pre Order Traversal',end = '')
+root.traversalPreOrder()
+
+  
     
     
     
