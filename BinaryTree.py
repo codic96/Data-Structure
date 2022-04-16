@@ -36,6 +36,11 @@ root.right = Node(3)
 root.left.left = Node(4)
 print('Pre Order Traversal',end = '')
 root.traversalPreOrder()
+print('\n Inorder Traversal:',end='')
+root.traverseInorder()
+print('\n Post order Traversal',end='')
+root.traversePostOrder()
+
 
   
     
