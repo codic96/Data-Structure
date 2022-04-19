@@ -27,6 +27,18 @@ def print_matrix(self):
   for row in self.adjMatrix:
     for val in row:
       print('{:4}'.format(val))
+def main():
+  g = Graph(5)
+  g.add_edge(0,1)
+  g.add_edge(0,2)
+  g.add_edge(1,2)
+  g.add_edge(2,0)
+  g.add_edge(2,3)
+  g.print_matrix()
+
+if __name__ == '__main__':
+  main()
+  
       
     
       
