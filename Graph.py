@@ -20,6 +20,14 @@ class Graph(object):
       return 
     self.adjMatrix[v1][v2]=0
     self.adjMatrix[v2][v1]=0
+ def __len__(self):
+  return self.size
+#Print the matrix 
+def print_matrix(self):
+  for row in self.adjMatrix:
+    for val in row:
+      print('{:4}'.format(val))
+      
     
       
     
