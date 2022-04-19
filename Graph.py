@@ -7,5 +7,19 @@ class Graph(object):
     for i in range(size):
       self.adjMatrix.append([0 for i in range(size)])
       self.size=size
+  #Add edges 
+  def add_edge(self,v1,v2):
+    if v1==v2:
+      print("Some vertex %d and %d" %(v1,v2))
+    self.adjMatrix[v1][v2]=1
+    self.adjMatrix[v2][v1]=1
+  #Remove edges 
+  def remove_edge(self,v1,v2):
+    if self.adjMatrix[v1][v2]==0:
+      print("No edge between %d and %d" %d(v1,v2))
+      return 
+    self.adjMatrix[v1][v2]=0
+    self.adjMatrix[v2][v1]=0
+    
       
     
