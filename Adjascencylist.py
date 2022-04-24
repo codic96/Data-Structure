@@ -28,5 +28,16 @@ def print_agraph(self):
       print("->{}".format(temp.vertex),end='')
       temp = temp.next
       print('\n')
+ 
+if __name__ == '__main__':
+  V = 5
+  #Create graph and edges 
+  graph = Graph(5)
+  graph.add_edges(0,1)
+  graph.add_edges(0,2)
+  graph.add_edges(0,3)
+  graph.add_edges(1,2)
+  graph.print_agraph()
+  
       
     
