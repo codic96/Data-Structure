@@ -17,5 +17,16 @@ class Graph:
     node = AdjNode(s)
     node.next = self.graph[d]
     self.graph[d]=node 
-    
+ 
+#Print the edges 
+
+def print_agraph(self):
+  for i in range(self.v):
+    print("vertex"+str(i)+":",end="")
+    temp = self.graph(i)
+    while temp:
+      print("->{}".format(temp.vertex),end='')
+      temp = temp.next
+      print('\n')
+      
     
